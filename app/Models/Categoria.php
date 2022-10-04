@@ -9,9 +9,9 @@ class Categoria extends Model
 {
     use HasFactory;
 
-    protected $fillable = ["nomeCategoria"];
-    protected $primaryKey = ["pkCategoria"];
-    protected $table = ["categorias"];
+    protected $fillable = ['nomedacategoria'];
+    protected $primaryKey = 'pkcategoria';
+    protected $table = 'categorias';
     public  $incrementing = true;
     public $timestamps = false;
 }
