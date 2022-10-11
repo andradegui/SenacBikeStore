@@ -1,3 +1,7 @@
+# Para configurar projeto:
+- criar .env
+- php artisan key:generate
+
 # Senac Bike Store 
 
 - Projeto da aula de Desenvolvimento de Web Services
@@ -5,7 +9,6 @@
 - Response -> enviando dado
 
 - Request -> recebendo dado 
-
 
 # Comandos: 
 - composer create-project laravel/laravel Senac-DemoMVC
