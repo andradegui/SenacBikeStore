@@ -4,7 +4,7 @@
 
 - Response -> enviando dado
 
-- Request -> recebendo dado 
+- Request -> recebendo dado // StoreCategoriaRequest
 
 
 # Comandos: 
@@ -12,8 +12,6 @@
 - php artisan:model Categoria
 - php artisan make:model Categoria
 - php artisan make:resource CategoriaResource
-- php artisan make: Api\CategoriaController --model=Categoria
-- php artisan make:controller Api\CategoriaController --model=Categoria
 - php artisan make:controller Api/CategoriaController --model=Categoria
 - php artisan make:request StoreCategoriaRequest
 - php artisan route:list
