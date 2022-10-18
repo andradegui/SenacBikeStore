@@ -16,9 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
-Route::apiResource('categorias', CategoriaController::class);
-Route::apiResource('produtos', ProdutoController::class);
+
+Route::middleware("localization")->group(function () {
+
+    Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+        return $request->user();
+    });
+
+    Route::apiResource('categorias', CategoriaController::class);
+    Route::apiResource('produtos', ProdutoController::class);
+
+});
