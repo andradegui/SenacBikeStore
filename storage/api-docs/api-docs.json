@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Senac Bike Store API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/categorias": {
+            "get": {
+                "tags": [
+                    "Categorias"
+                ],
+                "summary": "Retorna lista de Categorias",
+                "description": "Retorna o JSON da lista de Categorias",
+                "operationId": "getCategoriasList",
+                "responses": {
+                    "200": {
+                        "description": "Operação executada com sucesso"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Categoria": {
+                "title": "Categoria",
+                "description": "Modelo da categoria",
+                "properties": {
+                    "id": {
+                        "title": "ID",
+                        "description": "ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "nome_da_categoria": {
+                        "title": "nome da categoria",
+                        "description": "Nome da Categoria",
+                        "type": "string",
+                        "example": "Bicicleta"
+                    }
+                },
+                "type": "object",
+                "xml": {
+                    "name": "Categoria"
+                }
+            }
+        }
+    }
+}

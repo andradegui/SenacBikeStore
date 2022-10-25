@@ -20,3 +20,4 @@
 - php artisan make:controller Api/CategoriaController --model=Categoria
 - php artisan make:request StoreCategoriaRequest
 - php artisan route:list
+- php artisan l5-swagger:generate
