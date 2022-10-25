@@ -20,3 +20,5 @@
 - php artisan make:controller Api/CategoriaController --model=Categoria
 - php artisan make:request StoreCategoriaRequest
 - php artisan route:list
+- composer require laravel/passport
+- php artisan passport:install
