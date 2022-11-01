@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Models\Categoria;
-use App\Http\Resources\CategoriaResource;
-use App\Http\Requests\StoreCategoriaRequest;
+use App\Http\Resources\v1\CategoriaResource;
+use App\Http\Requests\v1\StoreCategoriaRequest;
 
 class CategoriaController extends Controller
 {
